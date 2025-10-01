@@ -1,0 +1,82 @@
+/* Access to all usable characters*/
+@charset "UTF-8";
+/* The body tag style applies to all elements on the page */
+body {
+    background-color: lightgreen;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    height: 100% /* Ensures full height*/
+}
+/* The wrapper ID style is encases everything else*/
+#wrapper {
+    width: 960px;
+    min-height: 100vh; /* At least full viewport*/
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: brown;
+    flex-direction: column; /* stack header, intro, content, footer */
+}
+
+/* The button-row ID style is centered*/
+.button-row {
+    width: 900px;
+    height: 280px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /*justify-content: center;  center horizontally */
+    /*gap: 1rem;  gaps between buttons equally apart */
+}
+
+
+/* Defining a style for a set of tags by using commas*/
+h1, h2, h3, h4, h5, h6, p, li {
+    margin-left: 15px;
+}
+
+#banner {
+    height: 120px;
+    background-color: lightsalmon;
+}
+
+#banner h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    margin: auto;
+}
+
+#footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    height:80px;
+    background-color: lightsalmon;
+}
+
+/* Adding style to our box class, making them centered*/
+.box {
+    height: 75%;
+    width: 30%; 
+    background-color: red;
+    margin: auto;
+    opacity:.5;
+}
+
+
+
+/* Pseudo-class applies to the box class when in a hovered state*/
+.box:hover {
+    background-color: white;
+    opacity:1;
+}
+
+/* Terminating float with clear class */
+.clear{
+    clear: both;
+}
