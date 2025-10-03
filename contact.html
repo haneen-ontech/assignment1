@@ -18,50 +18,82 @@
     <!--All content is enclosed in the wrapper ID style-->
     <div id="wrapper">
         <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
-        <header>Feedback Form</header>
-        <br>
-        <p>Send me your questions and project related queries!</p>
+        <header id="banner">
+        <!--Acts as the heading title of the main page-->
+        <br />
+        <h1>About me</h1>
+        <nav>
+            <h4>
+                <a href="index.html">Home page</a>
+                <a href="aboutme.html">About me</a>
+                <a href="projects.html">Personal projects</a>
+            </h4>
+        </nav>
+      </header>
 
-        <form action="mailto:haneen.almusowi@ontariotechu.net"?subject="Feedback from website"
+        <div class="form-layout">
+
+            <form action="mailto:haneen.almusowi@ontariotechu.net"?subject="Feedback from website"
             enctype="text/plain" method="post" name="FeedbackForm">
-            <p>
-                <label for="Name">Name: </label>
-                <input type="text" name="Name" size="40"
-                placeholder="Enter your name" required>
-            </p>
-            <p>
-                <label for="Email">Email: </label>
-                <input type="email" name="Email" size="40"
-                placeholder="Enter your email address" required>
-            </p>
-            <p>
-                <label for="comments">Comments: </label>
-                <br>
-                <textarea name="comments" cols="60" rows="8" size="40" placeholder="Write your feedback here"></textarea>
-            </p>
-            <p>
-                <input type="checkbox" name="rate" checked>
-                <label for="rate">Did you enjoy my website?</label>                
-            </p>
-            <p>
-                <label for="quantity">What is 2 + 2? (To check if you're a robot)</label>
-                <input type="number" name="quantity">
-                <!--Need to add them writing right answer for 2 + 2 will use js-->
-            </p>
-            <p>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
-            </p>
+                <p>Send me your questions and project related queries!</p>
+                <p>
+                    <label for="Name">Name: </label>
+                    <input type="text" name="Name" size="40"
+                    placeholder="Enter your name" required>
+                </p>
+                <p>
+                    <label for="Email">Email: </label>
+                    <input type="email" name="Email" size="40"
+                    placeholder="Enter your email address" required>
+                </p>
+                <p>
+                    <label for="comments">Comments: </label>
+                    <br>
+                    <textarea name="comments" cols="60" rows="8" size="40" placeholder="Write your feedback here"></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" name="rate" checked>
+                    <label for="rate">Did you enjoy my website?</label>                
+                </p>
+                <p>
+                    <label for="quantity">What is 2 + 2? (To check if you're a robot)</label>
+                    <input type="number" id="quantity" name="quantity">
+                    <button type="button" onclick="checkAnswer()">Submit</button>
 
-        </form>
-        
-        <!--The clear class style removes floats-->
-        <div class="clear"></div>
-        <!--The footer is the bottom part of the page-->
-        <div id="footer">
-            <br>
-            <h5>Site by Haneen</h5>
+                    <script>
+                        function checkAnswer() {
+                            let answer = document.getElementById("quantity").value;
+                            if (answer == 4) {
+                            alert("Correct! You're human!");
+                            } else {
+                            alert("Incorrect number, try again.");
+                            }
+                        }
+                    </script>
+                    <!--Need to add them writing right answer for 2 + 2 will use js-->
+                </p>
+                <p>
+                    <input type="reset" value="Reset">
+                </p>
+            </form>
         </div>
+
+      
+        
+        <!--The footer is the bottom part of the page-->
+        <footer id="aboutfooter">
+            <nav>
+                <p>@ 2025 by Haneen Al-musowi. All Rights Reserved.</p>
+                <address>
+                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi@ontariotechu.net</p>
+                </address>
+                <p>
+                    <a href="index.html">Home page</a>
+                    <a href="aboutme.html">About me</a>
+                    <a href="projects.html">Personal projects</a>
+                </p>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>
