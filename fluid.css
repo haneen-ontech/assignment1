@@ -1,5 +1,5 @@
-/* Access to all usable characters*/
 @charset "UTF-8";
+/* CSS document for laptop*/
 /* The body tag style applies to all elements on the page */
 body {
     font-family: Verdana, Geneva, Arial, sans-serif;
@@ -9,7 +9,7 @@ body {
     background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
-    background: linear-gradient(bottom, lightpink 0%,lightblue 100%);
+    background: linear-gradient(top, bottom, lightpink 0%,lightblue 100%);
 }
 /* The wrapper ID style is encases everything else*/
 #wrapper {
@@ -22,7 +22,7 @@ body {
     background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
-    background: linear-gradient(bottom, lightpink 0%,lightblue 100%);
+    background: linear-gradient(to bottom, lightpink 0%,lightblue 100%);
 }
 
 /* The button-row ID style is centered*/
@@ -44,10 +44,6 @@ body {
 }
 
 
-/* Defining a style for a set of tags by using commas*/
-h1, h2, h3, h4, h5, h6, p, li {
-    margin-left: 15px;
-}
 
 #mainfooter {
     /*margin-top: auto;*/ /* Pushes footer to the bottom */
@@ -60,10 +56,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 #aboutfooter {
     /*margin-top: auto;*/ /* Pushes footer to the bottom */
     height:130px;
-    background: -moz-linear-gradient(45deg, lightblue 0%, darkslateblue 100%);
-    background: -webkit-linear-gradient(45deg, lightblue 0%, darkslateblue 100%);
-    background: -o-linear-gradient(45deg, lightblue 0%, darkslateblue 100%);
-    background: linear-gradient(45deg, lightblue 0%,darkslateblue 100%);
+    background-color: lightblue;
     text-align: center;
     padding: 10px;
 }
@@ -82,36 +75,11 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 
-img[alt="icon"] {
-    float: right;
-    height: 250px;
-    width: 250px; 
-    background-color: white;
-    margin-top: 80px;
-    margin-left: 10px;
-    margin-right: 33px;
-    opacity:1;
-}
-
-img[alt="icon"]:hover {
-    background-color: white;
-    opacity:0.5;
-}
-
 /* Terminating float with clear class */
 .clear{
     clear: both;
 }
 
-#myvideo {
-    width:500px;
-    height:400px;
-    margin-top: 90px;
-    margin-left: 50px;
-    background-color: black;
-    border: 6px darkslateblue solid;
-
-}
 
 /* The right-column ID style is floated right */
 #right-column {
@@ -126,56 +94,12 @@ width: 360px;background-color:lightgoldenrodyellow;
 height:600px;
 }
 
-figure {
-    background-color: black;
-    border: 4px solid darkslateblue;
-    width: 200px;
-    height: 250px;
-    margin-top: 0px;
-    margin-left: 90px;
-
-}
-
-figcaption {
-    color: black;
-    text-align: center;
-    font-size: small;
-    margin-top: -15px;
-
-}
-
-
 article {
     text-align: center;
     margin-top: 40px;
 
 }
 
-.playbutton {
-    background-color:darkslateblue;
-    color:white;
-    height:40px;
-    border:2px white solid;
-    box-shadow: 10px 10px 5px black;
-    border-radius: 5px;
-    margin-left: 55px;
-}
-
-.playbutton:hover {
-    background-color:darkgrey;
-    color:black;
-    opacity: 0.5;
-    height:40px;
-    box-shadow: 5px 5px 5px black;
-    border:2px white solid;
-    border-radius: 5px;
-}
-
-li {
-    text-align: left;
-    float: left;
-    margin-right: 40px;
-}
 
 
 .project-row {
@@ -195,22 +119,6 @@ li {
     color: black;
 }
 
-/* Adding style to our box class, making them centered*/
-.box {
-    float: left;
-    height: 200px;
-    width: 400px; 
-    background-color: lightblue;
-    margin-top: 20px;
-    margin-left: 33px;
-    opacity:.5;
-}
-
-/* Pseudo-class applies to the box class when in a hovered state*/
-.box:hover {
-    background-color: darkslateblue;
-    opacity:1;
-}
 
 .project-row article h3 {
     text-align: center;
@@ -236,4 +144,3 @@ li {
     padding: 12px;
 
 }
-

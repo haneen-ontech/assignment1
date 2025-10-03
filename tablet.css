@@ -1,0 +1,54 @@
+/* Tablet CSS overrides */
+#wrapper {
+    width: 95%;           /* fluid width instead of 960px */
+    height: auto;         /* allow content to determine height */
+}
+
+.button-row {
+    width: 95%;           /* reduce width for smaller screen */
+    height: auto;         /* let content define height */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainfooter,
+#aboutfooter {
+    height: auto;         /* make footer flexible */
+    padding: 10px;
+}
+
+#banner {
+    height: auto;         /* shrink banner height */
+}
+
+#right-column,
+#left-column {
+    width: 100%;          /* stack columns instead of side by side */
+    float: none;
+    height: auto;
+}
+
+.project-row,
+.form-layout {
+    width: 95%;           /* fluid width for content areas */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    margin-top: 20px;     /* reduce spacing for tablet */
+}
+
+.project-row article,
+.project-row article h3 {
+    text-align: center;
+}
+
+.project-row h3 {
+    text-align: center;
+}
+
+.form-layout p {
+    padding: 8px;         /* smaller padding for smaller screen */
+}

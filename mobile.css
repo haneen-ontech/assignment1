@@ -1,0 +1,64 @@
+/* Phone CSS overrides */
+#wrapper {
+    width: 100%;         /* full viewport width */
+    height: auto;        /* let content define height */
+}
+
+
+.button-row {
+    width: 100%;         /* full width buttons container */
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#mainfooter,
+#aboutfooter {
+    width: 100%;
+    height: auto;
+    padding: 8px;        /* slightly smaller padding */
+}
+
+#banner {
+    width: 100%;
+    height: auto;        /* shrink banner height for phone */
+}
+
+#right-column,
+#left-column {
+    width: 100%;         /* stack columns vertically */
+    float: none;
+    height: auto;
+}
+
+.project-row,
+.form-layout {
+    width: 100%;         /* full width for content areas */
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+article {
+    margin-top: 15px;    /* smaller spacing for phone */
+}
+
+.project-row article,
+.project-row article h3 {
+    text-align: center;
+}
+
+.project-row h3 {
+    text-align: center;
+}
+
+.form-layout p {
+    padding: 6px;        /* reduce padding for small screen */
+}
+
+/* Images (if needed) */
+img {
+    width: 90%;          /* scale images for mobile */
+    height: auto;
+    margin: 0 auto;      /* center images */
+}
