@@ -6,31 +6,38 @@ body {
     font-family: Verdana, Geneva, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    height: 100% /* Ensures full height*/
 }
 /* The wrapper ID style is encases everything else*/
 #wrapper {
     width: 960px;
-    min-height: 100vh; /* At least full viewport*/
-    display: flex;
+    height: 800px; /* At least full viewport*/
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    background-color: brown;
-    flex-direction: column; /* stack header, intro, content, footer */
+    background: yellow;
+    background: -moz-linear-gradient(top, red 0%, yellow 100%);
+    background: -webkit-linear-gradient(top, red 0%, yellow 100%);
+    background: -o-linear-gradient(top, red 0%, yellow 100%);
+    background: linear-gradient(to bottom, red 0%,yellow 100%);
 }
 
 /* The button-row ID style is centered*/
 .button-row {
     width: 900px;
-    height: 280px;
-    background-color: brown;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background: yellow;
+
     /*justify-content: center;  center horizontally */
     /*gap: 1rem;  gaps between buttons equally apart */
 }
+
+.button-row h3 {
+    text-align: center;
+}
+
 
 
 /* Defining a style for a set of tags by using commas*/
@@ -39,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 #banner {
-    height: 120px;
+    height: 150px;
     background-color: lightsalmon;
 }
 
@@ -48,23 +55,21 @@ h1, h2, h3, h4, h5, h6, p, li {
     text-align: center;
 }
 
-.intro {
-    text-align: center;
-    margin: auto;
-}
-
 #footer {
-    margin-top: auto; /* Pushes footer to the bottom */
-    height:80px;
+    /*margin-top: auto;*/ /* Pushes footer to the bottom */
+    height:100px;
     background-color: lightsalmon;
 }
 
 /* Adding style to our box class, making them centered*/
 .box {
-    height: 75%;
-    width: 30%; 
+    float: right;
+    height: 250px;
+    width: 250px; 
     background-color: red;
-    margin: auto;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 33px;
     opacity:.5;
 }
 
@@ -79,4 +84,27 @@ h1, h2, h3, h4, h5, h6, p, li {
 /* Terminating float with clear class */
 .clear{
     clear: both;
+}
+
+.myvideo {
+    width:500px;
+    height:400px;
+    margin-top: 90px;
+    margin-left: 50px;
+    background-color: black;
+    border: 6px white solid;
+
+}
+
+/* The right-column ID style is floated right */
+#right-column {
+float: right;
+width: 600px;height: 600px;
+background-color:LightGray;
+}
+/* The left-column ID style is floated left */
+#left-column {
+float: left;
+width: 360px;background-color:silver;
+height:600px;
 }
