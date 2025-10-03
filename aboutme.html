@@ -2,51 +2,89 @@
 <!DOCTYPE html>
 <!--This specifies the page's primary language to browsers-->
 <html lang="en">
-<!--This is the head of the page which specifies content not visible in browser window, the <title> tag displays on the tab of the page-->
-<head>
+  <!--This is the head of the page which specifies content not visible in browser window, the <title> tag displays on the tab of the page-->
+  <head>
     <!--The UTF-8 character set provides all symbols and characters-->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--Ensures the report of the actual browser size depending on the device used, ensures the site is mobile-friendly and responsive-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
     <!--<title> tag appears in the browser tab (improves seo)-->
     <title>Haneen's Portfolio</title>
     <!--This links to our style sheet file, (rel="stylesheet" tells the browser the linked file is a css stylesheet and "type" specifies the style type)-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<!--The content in the body is visible in the browser's window-->
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="video.js" defer></script>
+
+  </head>
+  <!--The content in the body is visible in the browser's window-->
+  <body>
     <!--All content is enclosed in the wrapper ID style-->
     <div id="wrapper">
-        <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
-        <div id="banner">
-            <!--Acts as the heading title of the main page-->
-            <br>
-            <h1>About me</h1>
-        </div>
-        <!--
+      <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
+      <header id="banner">
+        <!--Acts as the heading title of the main page-->
+        <br />
+        <h1>About me</h1>
+        <nav>
+            <h4>
+                <a href="index.html">Home page</a>
+                <a href="projects.html">Personal projects</a>
+                <a href="contact.html">Contact me</a>
+            </h4>
+        </nav>
+      </header>
+      <!--
         <div id="top-row">
             <p>Hello.</p>
         </div> -->
-        <!--bottom row ID style is floated to the bottom and used for the boxes-->
-        <div id="left-column">
-            <br>
-            <h3>This is about me!</h3>
-        </div>
-        <div id="right-column">
-            <video controls muted loop poster="rubikscube.jpg" class="myvideo">
-                <source src="aboutme.mp4" type="video/mp4">
-                <source src="aboutme.ogv" type="video/ogg">
-                Your browser doesn't support the video tag.
-            </video>
-        </div>
+      <!--bottom row ID style is floated to the bottom and used for the boxes-->
+      <div id="left-column">
+        <br />
+        <article>
+          <figure>
+            <img src="profile.jpeg" width="200px" height="250px" id="mypic"/>
+            <figcaption>
+              <h5>This is me!</h5>
+            </figcaption>
+          </figure>
+          <h3>This is about me!</h3>
+          <p>A few things about me...</p>
+          <section>
+            <h3>Heading</h3>
+            <p>Something to talk about</p>
+          </section>
+          <section>
+            <h3>Heading</h3>
+            <p>Something to talk about</p>
+          </section>
+        </article>
+      </div>
+      <div id="right-column">
+        <video controls muted loop poster="rubikscube.jpg" id="myvideo">
+          <source src="aboutme.mp4" type="video/mp4" />
+          <source src="aboutme.ogv" type="video/ogg" />
+          Your browser doesn't support the video tag.
+        </video>
+        <button class="playbutton" onclick="playPause()">Play/Pause</button>
+      </div>
 
-        <!--The clear class style removes floats-->
-        <div class="clear"></div>
-        <!--The footer is the bottom part of the page-->
-        <div id="footer">
-            <br>
-            <h5>Site by Haneen</h5>
-        </div>
+      <!--The clear class style removes floats-->
+      <div class="clear"></div>
+      <!--The footer is the bottom part of the page-->
+      <footer id="aboutfooter">
+            <nav>
+                <p>@ 2025 by Haneen Al-musowi. All Rights Reserved.</p>
+                <address>
+                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi</p>
+                </address>
+                <p>
+                    <a href="index.html">Home page</a>
+                    <a href="projects.html">Personal projects</a>
+                    <a href="contact.html">Contact me</a>
+                </p>
+            </nav>
+        </footer>
+      </div>
     </div>
-</body>
+  </body>
 </html>

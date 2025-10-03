@@ -1,0 +1,67 @@
+<!--This is the HTML doctype declaration that lets the browser know we are running HTML-->
+<!DOCTYPE html>
+<!--This specifies the page's primary language to browsers-->
+<html lang="en">
+<!--This is the head of the page which specifies content not visible in browser window, the <title> tag displays on the tab of the page-->
+<head>
+    <!--The UTF-8 character set provides all symbols and characters-->
+    <meta charset="UTF-8">
+    <!--Ensures the report of the actual browser size depending on the device used, ensures the site is mobile-friendly and responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title> tag appears in the browser tab (improves seo)-->
+    <title>Haneen's Portfolio</title>
+    <!--This links to our style sheet file, (rel="stylesheet" tells the browser the linked file is a css stylesheet and "type" specifies the style type)-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!--The content in the body is visible in the browser's window-->
+<body>
+    <!--All content is enclosed in the wrapper ID style-->
+    <div id="wrapper">
+        <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
+        <header>Feedback Form</header>
+        <br>
+        <p>Send me your questions and project related queries!</p>
+
+        <form action="mailto:haneen.almusowi@ontariotechu.net"?subject="Feedback from website"
+            enctype="text/plain" method="post" name="FeedbackForm">
+            <p>
+                <label for="Name">Name: </label>
+                <input type="text" name="Name" size="40"
+                placeholder="Enter your name" required>
+            </p>
+            <p>
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" size="40"
+                placeholder="Enter your email address" required>
+            </p>
+            <p>
+                <label for="comments">Comments: </label>
+                <br>
+                <textarea name="comments" cols="60" rows="8" size="40" placeholder="Write your feedback here"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="rate" checked>
+                <label for="rate">Did you enjoy my website?</label>                
+            </p>
+            <p>
+                <label for="quantity">What is 2 + 2? (To check if you're a robot)</label>
+                <input type="number" name="quantity">
+                <!--Need to add them writing right answer for 2 + 2 will use js-->
+            </p>
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </p>
+
+        </form>
+        
+        <!--The clear class style removes floats-->
+        <div class="clear"></div>
+        <!--The footer is the bottom part of the page-->
+        <div id="footer">
+            <br>
+            <h5>Site by Haneen</h5>
+        </div>
+    </div>
+</body>
+</html>

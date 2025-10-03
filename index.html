@@ -18,11 +18,18 @@
     <!--All content is enclosed in the wrapper ID style-->
     <div id="wrapper">
         <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
-        <div id="banner">
+        <header id="banner">
             <!--Acts as the heading title of the main page-->
             <br>
             <h1>Welcome to Haneen's Portfolio</h1>
-        </div>
+            <nav>
+                <h4>
+                    <a href="aboutme.html">About me</a>
+                    <a href="projects.html">Personal projects</a>
+                    <a href="contact.html">Contact me</a>
+                </h4>
+            </nav>
+        </header>
         <!--
         <div id="top-row">
             <p>Hello.</p>
@@ -30,18 +37,35 @@
         <!--bottom row ID style is floated to the bottom and used for the boxes-->
         <div class="button-row">
             <br>
-            <h3>Welcome to my portfolio! Here you will blah blah blah. Feel free to use the navigation or buttons below to walk through the site!</h3>
-            <div class="box"><p>box 1</p></div>
-            <div class="box"><p>box 2</p></div>
-            <div class="box"><p>box 3</p></div>
+            <h3>Welcome to my portfolio! Here you can learn more about myself, my projects, and even contact me for further questions! Feel free to use the navigation or buttons below to walk through the site!</h3>
+            
+            <a href="contact.html">
+            <img src="mail-icon.jpg" width="250" height="250" alt="icon">
+            </a>
+            <a href="projects.html">
+            <img src="pencil-icon.jpg" width="250" height="250" alt="icon">
+            </a>
+            <a href="aboutme.html">
+            <img src="question-icon.jpg" width="250" height="250" alt="icon">
+            </a>
+
         </div>
         <!--The clear class style removes floats-->
         <div class="clear"></div>
         <!--The footer is the bottom part of the page-->
-        <div id="footer">
-            <br>
-            <h5>Site by Haneen</h5>
-        </div>
+        <footer id="mainfooter">
+            <nav>
+                <p>@ 2025 by Haneen Al-musowi. All Rights Reserved.</p>
+                <address>
+                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi</p>
+                </address>
+                <p>
+                    <a href="aboutme.html">About me</a>
+                    <a href="projects.html">Personal projects</a>
+                    <a href="contact.html">Contact me</a>
+                </p>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>

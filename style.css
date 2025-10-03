@@ -2,23 +2,27 @@
 @charset "UTF-8";
 /* The body tag style applies to all elements on the page */
 body {
-    background-color: lightgreen;
     font-family: Verdana, Geneva, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+    background: lightblue;
+    background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
+    background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
+    background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
+    background: linear-gradient(to bottom, lightpink 0%,lightblue 100%);
 }
 /* The wrapper ID style is encases everything else*/
 #wrapper {
     width: 960px;
-    height: 800px; /* At least full viewport*/
+    height: 900px; /* At least full viewport*/
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    background: yellow;
-    background: -moz-linear-gradient(top, red 0%, yellow 100%);
-    background: -webkit-linear-gradient(top, red 0%, yellow 100%);
-    background: -o-linear-gradient(top, red 0%, yellow 100%);
-    background: linear-gradient(to bottom, red 0%,yellow 100%);
+    background: lightblue;
+    background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
+    background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
+    background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
+    background: linear-gradient(to bottom, lightpink 0%,lightblue 100%);
 }
 
 /* The button-row ID style is centered*/
@@ -28,7 +32,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    background: yellow;
+    background: lightgoldenrodyellow;
 
     /*justify-content: center;  center horizontally */
     /*gap: 1rem;  gaps between buttons equally apart */
@@ -36,8 +40,8 @@ body {
 
 .button-row h3 {
     text-align: center;
+    color: black;
 }
-
 
 
 /* Defining a style for a set of tags by using commas*/
@@ -45,21 +49,35 @@ h1, h2, h3, h4, h5, h6, p, li {
     margin-left: 15px;
 }
 
-#banner {
-    height: 150px;
-    background-color: lightsalmon;
+#mainfooter {
+    /*margin-top: auto;*/ /* Pushes footer to the bottom */
+    height:130px;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
 }
 
-#banner h1 {
-    color: darkblue;
+#aboutfooter {
+    /*margin-top: auto;*/ /* Pushes footer to the bottom */
+    height:130px;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+#banner {
+    height: 150px;
+    background-color: lightpink;
     text-align: center;
 }
 
-#footer {
-    /*margin-top: auto;*/ /* Pushes footer to the bottom */
-    height:100px;
-    background-color: lightsalmon;
+#banner h1 {
+    color: black;
+    text-align: center;
 }
+
 
 /* Adding style to our box class, making them centered*/
 .box {
@@ -73,12 +91,26 @@ h1, h2, h3, h4, h5, h6, p, li {
     opacity:.5;
 }
 
-
-
 /* Pseudo-class applies to the box class when in a hovered state*/
 .box:hover {
     background-color: white;
     opacity:1;
+}
+
+img[alt="icon"] {
+    float: right;
+    height: 250px;
+    width: 250px; 
+    background-color: white;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 33px;
+    opacity:1;
+}
+
+img[alt="icon"]:hover {
+    background-color: white;
+    opacity:0.5;
 }
 
 /* Terminating float with clear class */
@@ -86,7 +118,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     clear: both;
 }
 
-.myvideo {
+#myvideo {
     width:500px;
     height:400px;
     margin-top: 90px;
@@ -100,11 +132,48 @@ h1, h2, h3, h4, h5, h6, p, li {
 #right-column {
 float: right;
 width: 600px;height: 600px;
-background-color:LightGray;
+background-color:lightyellow;
 }
 /* The left-column ID style is floated left */
 #left-column {
 float: left;
-width: 360px;background-color:silver;
+width: 360px;background-color:lightgoldenrodyellow;
 height:600px;
+}
+
+figure {
+    background-color: black;
+    text-align: center;
+    border: 4px solid black;
+    
+    width: 200px;
+    height: 250px;
+
+}
+
+figcaption {
+    color: black;
+    text-align: center;
+    font-size: small;
+
+}
+
+.playbutton {
+    background-color:darkslateblue;
+    color:white;
+    height:40px;
+    border:2px white solid;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 5px;
+    margin-left: 55px;
+}
+
+.playbutton:hover {
+    background-color:darkgrey;
+    color:black;
+    opacity: 0.5;
+    height:40px;
+    box-shadow: 5px 5px 5px black;
+    border:2px white solid;
+    border-radius: 5px;
 }
