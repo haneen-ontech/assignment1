@@ -1,7 +1,16 @@
+@charset "UTF-8";
 /* Tablet CSS overrides */
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: black;
+}
+
 #wrapper {
-    width: 95%;           /* fluid width instead of 960px */
-    height: auto;         /* allow content to determine height */
+    width: 95%;          /* fluid width instead of 960px */
+    height: auto;
+    background: black;         /* allow content to determine height */
 }
 
 .button-row {
@@ -30,14 +39,14 @@
 
 .project-row,
 .form-layout {
-    width: 95%;           /* fluid width for content areas */
+    width: 100%;           /* fluid width for content areas */
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 article {
-    margin-top: 20px;     /* reduce spacing for tablet */
+    margin-top: 10px;     /* reduce spacing for tablet */
 }
 
 .project-row article,
@@ -51,4 +60,38 @@ article {
 
 .form-layout p {
     padding: 8px;         /* smaller padding for smaller screen */
+}
+
+.box {
+    background-color: darkslateblue;
+    opacity: 1;
+}
+
+.project-row article h3 {
+    color: white;
+}
+
+.project-row article {
+    color: white;
+}
+
+#myvideo {
+    width:65%;
+    height:80%;
+    margin-top: 30px;
+    margin-left: 70px;
+    background-color: black;
+    border: 6px darkslateblue solid;
+
+}
+
+figure{
+    border: 4px solid darkslateblue;
+    margin-top: auto;
+    margin-left: 30%;
+
+}
+
+textarea{
+    width: 70%;
 }
