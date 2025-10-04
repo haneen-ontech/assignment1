@@ -1,15 +1,19 @@
-/* Access to all usable characters*/
 @charset "UTF-8";
+/*global styles, access to wide character set*/
+
+
 /* The body tag style applies to all elements on the page */
 body {
     font-family: Verdana, Geneva, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
+
+    /*Background gradient for desktop it is linear gradient*/
     background: lightblue;
     background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
-    background: linear-gradient(bottom, lightpink 0%,lightblue 100%);
+    background: linear-gradient(to bottom, lightpink 0%,lightblue 100%);
 }
 /* The wrapper ID style is encases everything else*/
 #wrapper {
@@ -18,14 +22,16 @@ body {
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
+
+    /*Same gradient background as body*/
     background: lightblue;
     background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
-    background: linear-gradient(bottom, lightpink 0%,lightblue 100%);
+    background: linear-gradient(to bottom, lightpink 0%,lightblue 100%);
 }
 
-/* The button-row ID style is centered*/
+/* The button-row ID style is centered and a container for homepage buttons*/
 .button-row {
     width: 900px;
     height: 550px;
@@ -34,8 +40,6 @@ body {
     margin-top: 20px;
     background: lightgoldenrodyellow;
 
-    /*justify-content: center;  center horizontally */
-    /*gap: 1rem;  gaps between buttons equally apart */
 }
 
 .button-row h3 {
@@ -44,21 +48,19 @@ body {
 }
 
 
-/* Defining a style for a set of tags by using commas*/
+/* Defining a style for a set of tags by using commas where a left margin is added*/
 h1, h2, h3, h4, h5, h6, p, li {
     margin-left: 15px;
 }
 
 #mainfooter {
-    /*margin-top: auto;*/ /* Pushes footer to the bottom */
     height:130px;
     background-color: lightblue;
     text-align: center;
     padding: 10px;
 }
 
-#aboutfooter {
-    /*margin-top: auto;*/ /* Pushes footer to the bottom */
+#aboutfooter { /*different footers for different pages*/
     height:130px;
     background: -moz-linear-gradient(45deg, lightblue 0%, darkslateblue 100%);
     background: -webkit-linear-gradient(45deg, lightblue 0%, darkslateblue 100%);
@@ -67,8 +69,6 @@ h1, h2, h3, h4, h5, h6, p, li {
     text-align: center;
     padding: 10px;
 }
-
-
 
 #banner {
     height: 150px;
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     text-align: center;
 }
 
-
+/*method for adding styles to images, using that alt id we saw was necessary earlier*/
 img[alt="icon"] {
     float: right;
     height: 250px;
@@ -93,6 +93,7 @@ img[alt="icon"] {
     opacity:1;
 }
 
+/*style change for when the action of the mouse is hovering over element*/
 img[alt="icon"]:hover {
     background-color: white;
     opacity:0.5;
@@ -103,6 +104,7 @@ img[alt="icon"]:hover {
     clear: both;
 }
 
+/*styling my embedded video*/
 #myvideo {
     width:500px;
     height:400px;
@@ -151,6 +153,7 @@ article {
 
 }
 
+/*styles for playbutton created by javascript*/
 .playbutton {
     background-color:darkslateblue;
     color:white;
@@ -185,11 +188,9 @@ li {
     margin-right: auto;
     margin-top: 20px;
     background: lightgoldenrodyellow;
-
-    /*justify-content: center;  center horizontally */
-    /*gap: 1rem;  gaps between buttons equally apart */
 }
 
+/*adding style to specifically h3 from class project-row, other h3 unaffected*/
 .project-row h3 {
     text-align: center;
     color: black;

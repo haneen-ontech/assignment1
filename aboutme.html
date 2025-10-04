@@ -5,20 +5,20 @@
   <!--This is the head of the page which specifies content not visible in browser window, the <title> tag displays on the tab of the page-->
   <head>
     <!--The UTF-8 character set provides all symbols and characters-->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <!--Ensures the report of the actual browser size depending on the device used, ensures the site is mobile-friendly and responsive-->
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width">
     <!--<title> tag appears in the browser tab (improves seo)-->
     <title>Haneen's Portfolio</title>
     <!--This links to our style sheet file, (rel="stylesheet" tells the browser the linked file is a css stylesheet and "type" specifies the style type)-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Full size monitor-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Fluid layout for full size monitor-->
     <link rel="stylesheet" type="text/css" href="fluid.css" media="only screen and (min-width: 960px)"> 
-    <!-- Tablet size-->
+    <!-- Fluid layout for tablet size-->
     <link rel="stylesheet" type="text/css" href="tablet.css" media="only screen and (min-width:481px) and (max-width: 959px)">
-    <!-- Phone size-->
+    <!-- Fluid layout for phone size-->
     <link rel="stylesheet" type="text/css" href="mobile.css" media="only screen and (max-width: 480px)">
-
+    <!--Link to JavaScript function for video control (the play button I make for my video)-->
     <script src="video.js" defer></script>
 
   </head>
@@ -26,12 +26,11 @@
   <body>
     <!--All content is enclosed in the wrapper ID style-->
     <div id="wrapper">
-      <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
+      <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth, that is why it is a <header> tag instead of <div> tag-->
       <header id="banner">
-        <!--Acts as the heading title of the main page-->
-        <br />
-        <h1>About me</h1>
-        <nav>
+        <br>
+        <h1>About me</h1> <!--Acts as heading title for about me page-->
+        <nav> <!--Naviagtion bar with links to other three pages-->
             <h4>
                 <a href="index.html">Home page</a>
                 <a href="projects.html">Personal projects</a>
@@ -39,21 +38,18 @@
             </h4>
         </nav>
       </header>
-      <!--
-        <div id="top-row">
-            <p>Hello.</p>
-        </div> -->
-      <!--bottom row ID style is floated to the bottom and used for the boxes-->
+ 
+      <!--left-column id style holds the embedded image as well as <article> tag with information about me-->
       <div id="left-column">
-        <br />
-        <figure>
-            <img src="profile.jpeg" width="200px" height="250px" id="mypic"/>
+        <br>
+        <figure> <!--semantic tag used for linking images, can control size of image, needs alt id for reference later-->
+            <img src="profile.jpeg" width="200" height="250" alt="mypic">
             <figcaption>
               <h5>This is me!</h5>
             </figcaption>
         </figure>
-        <article>
-          <h4>Who is Haneen</h4>
+        <article> <!--<article> tag with <section> tags to divide information in order-->
+          <h4>Who is Haneen?</h4>
           <h6>I am 20 years old and currently going to school at Ontario Tech University.</h6>
           <section>
             <h5><mark>My Dream</mark></h5>
@@ -61,22 +57,19 @@
           </section>
           <section>
             <h5><mark>My Favourites</mark></h5>
-            <h6>My favourite things besides cybersecurity are:
-                <ul>
-                    <li>sushi</li>
-                    <li>puzzles</li>
-                    <li>fashion</li>
-                </ul>
+            <h6>My favourite things besides cybersecurity are:, sushi, puzzles and fashion.
             </h6>
           </section>
         </article>
       </div>
+      <!--right-column id style holds embedded video-->
       <div id="right-column">
-        <video controls muted loop poster="rubikscube.jpg" id="myvideo">
-          <source src="aboutme.mp4" type="video/mp4" />
-          <source src="aboutme.ogv" type="video/ogg" />
-          Your browser doesn't support the video tag.
+        <video controls muted loop poster="rubikscube.jpg" id="myvideo"> <!--video controls such as automaticlaly muted, plays on loop, and a poster for when video isn't playing-->
+          <source src="aboutme.mp4" type="video/mp4"> <!--have both mp4 and ogg formats to ensure compatability with most browsers-->
+          <source src="aboutme.ogv" type="video/ogg">
+          Your browser doesn't support the video tag. <!--In case no file or video works due to not being supported by browser-->
         </video>
+        <!--Button class for video playbutton, call on js function-->
         <button class="playbutton" onclick="playPause()">Play/Pause</button>
       </div>
 
@@ -87,7 +80,7 @@
             <nav>
                 <p>@ 2025 by Haneen Al-musowi. All Rights Reserved.</p>
                 <address>
-                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi@ontariotechu.net</p>
+                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi@ontariotechu.net</a></p> <!--use this line to allow users to mail to given address-->
                 </address>
                 <p>
                     <a href="index.html">Home page</a>
@@ -97,6 +90,5 @@
             </nav>
         </footer>
       </div>
-    </div>
   </body>
 </html>

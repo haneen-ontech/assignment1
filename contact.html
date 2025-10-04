@@ -11,6 +11,8 @@
     <!--<title> tag appears in the browser tab (improves seo)-->
     <title>Haneen's Portfolio</title>
     <!--This links to our style sheet file, (rel="stylesheet" tells the browser the linked file is a css stylesheet and "type" specifies the style type)-->
+
+    <!--main CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Full size monitor-->
     <link rel="stylesheet" type="text/css" href="fluid.css" media="only screen and (min-width: 960px)"> 
@@ -25,10 +27,9 @@
     <div id="wrapper">
         <!--The banner ID style is inside the wrapper ID style, the banner is the top section of the webpage and usually contains the main heading, navigation bar, and so forth-->
         <header id="banner">
-        <!--Acts as the heading title of the main page-->
-        <br />
-        <h1>Contact me</h1> 
-        <nav>
+        <br>
+        <h1>Contact me</h1><!--Acts as the heading title of the contact page-->
+        <nav> <!--naviagtion semantic used for links to other pages-->
             <h4>
                 <a href="index.html">Home page</a>
                 <a href="aboutme.html">About me</a>
@@ -37,36 +38,46 @@
         </nav>
       </header>
 
+        <!--form section-->
         <div class="form-layout">
+            <!--form using mailto for submission-->
+            <form action="mailto:haneen.almusowi@ontariotechu.net?subject=Feedback%20from%20website" method="post" enctype="text/plain" name="FeedbackForm">
 
-            <form action="mailto:haneen.almusowi@ontariotechu.net"?subject="Feedback from website"
-            enctype="text/plain" method="post" name="FeedbackForm">
+                <!--Intro text-->
                 <p>Send me your questions and project related queries!</p>
+
+                <!--Name input, making it required for submission, adding a placeholder to tell users what to type-->
                 <p>
-                    <label for="Name">Name: </label>
+                    <label>Name: </label>
                     <input type="text" name="Name" size="40"
                     placeholder="Enter your name" required>
                 </p>
+
+                <!--Email input, also required, makes it so that user must input an email format-->
                 <p>
-                    <label for="Email">Email: </label>
+                    <label>Email: </label>
                     <input type="email" name="Email" size="40"
                     placeholder="Enter your email address" required>
                 </p>
+                <!--Comments textarea where users can write a textbox-->
                 <p>
-                    <label for="comments">Comments: </label>
+                    <label>Comments: </label>
                     <br>
-                    <textarea name="comments" cols="60" rows="8" size="40" placeholder="Write your feedback here"></textarea>
+                    <textarea name="comments" cols="60" rows="8" placeholder="Write your feedback here"></textarea>
                 </p>
+                <!--Checkbox for feedback-->
                 <p>
                     <input type="checkbox" name="rate" checked>
-                    <label for="rate">Did you enjoy my website?</label>                
+                    <label>Did you enjoy my website?</label>                
                 </p>
+                <!--Robot check question, reuires in code javascript-->
                 <p>
                     <label for="quantity">What is 2 + 2? (To check if you're a robot)</label>
                     <input type="number" id="quantity" name="quantity">
-                    <button type="button" onclick="checkAnswer()">Submit</button>
+                    <button type="button" onclick="checkAnswer()">Check</button> <!--Creating a check button for value-->
 
                     <script>
+                        //Simple script that checks if the quantity is 4 or not, either way an alert is raised saying whether or not user is human depending on answer
                         function checkAnswer() {
                             let answer = document.getElementById("quantity").value;
                             if (answer == 4) {
@@ -76,10 +87,12 @@
                             }
                         }
                     </script>
-                    <!--Need to add them writing right answer for 2 + 2 will use js-->
+                
                 </p>
                 <p>
+                    <!--My reset and submit buttons-->
                     <input type="reset" value="Reset">
+                    <input type="submit" value="submit">
                 </p>
             </form>
         </div>
@@ -91,7 +104,7 @@
             <nav>
                 <p>@ 2025 by Haneen Al-musowi. All Rights Reserved.</p>
                 <address>
-                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi@ontariotechu.net</p>
+                    <p>Contact: <a href="mailto:haneen.almusowi@ontariotechu.net">haneen.almusowi@ontariotechu.net</a></p>
                 </address>
                 <p>
                     <a href="index.html">Home page</a>

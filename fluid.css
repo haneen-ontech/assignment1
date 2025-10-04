@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* CSS document for laptop*/
+/*This fluid.css file is similar to style.css since it is meant for laptop/PC view, not much changes here just some relative values taking over fixed values and switching certain things to auto*/
+
+
+
 /* The body tag style applies to all elements on the page */
 body {
     font-family: Verdana, Geneva, Arial, sans-serif;
@@ -9,7 +13,9 @@ body {
     background: -moz-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -webkit-linear-gradient(top, lightpink 0%, lightblue 100%);
     background: -o-linear-gradient(top, lightpink 0%, lightblue 100%);
-    background: linear-gradient(top, bottom, lightpink 0%,lightblue 100%);
+    background: linear-gradient(to bottom, lightpink 0%,lightblue 100%);
+
+
 }
 /* The wrapper ID style is encases everything else*/
 #wrapper {
@@ -33,9 +39,6 @@ body {
     margin-right: auto;
     margin-top: 20px;
     background: lightgoldenrodyellow;
-
-    /*justify-content: center;  center horizontally */
-    /*gap: 1rem;  gaps between buttons equally apart */
 }
 
 .button-row h3 {
@@ -46,7 +49,6 @@ body {
 
 
 #mainfooter {
-    /*margin-top: auto;*/ /* Pushes footer to the bottom */
     height:130px;
     background-color: lightblue;
     text-align: center;
@@ -54,7 +56,6 @@ body {
 }
 
 #aboutfooter {
-    /*margin-top: auto;*/ /* Pushes footer to the bottom */
     height:130px;
     background-color: lightblue;
     text-align: center;
@@ -99,8 +100,6 @@ article {
 
 }
 
-
-
 .project-row {
     width: 900px;
     height: 550px;
@@ -109,8 +108,6 @@ article {
     margin-top: 20px;
     background: lightgoldenrodyellow;
 
-    /*justify-content: center;  center horizontally */
-    /*gap: 1rem;  gaps between buttons equally apart */
 }
 
 .project-row h3 {
